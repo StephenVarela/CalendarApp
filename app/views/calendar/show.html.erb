@@ -18,7 +18,7 @@
     <ul> 
         <% @events_by_date.each do |t| %> 
             <% if t.date == date %> 
-                <li><%= t.type_of_shift %></li> 
+                <li><%= link_to(t.type_of_shift, t)%></li> 
             <% end %> 
         <% end %> 
     </ul>

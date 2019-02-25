@@ -1,0 +1,10 @@
+<div class="row">
+    <h2> <%=@event.type_of_shift%> shift </h2>
+</div>
+
+<%= link_to "Edit", edit_event_path(@event) %>
+<%= link_to "Delete", 
+            event_path(@event), 
+            method: :delete,
+            data: { confirm: 'Are you sure?' }%>
+
